@@ -69,6 +69,9 @@ const HomeMainbar = () => {
                <h1>...Loading</h1> :
                <>
                <p> {questionsList.length} questions </p>
+                questionsList.map(question) => {
+                 <Questions question = {question} key = {question.id}/>
+               }
                </>
                <Questions/>
              }
