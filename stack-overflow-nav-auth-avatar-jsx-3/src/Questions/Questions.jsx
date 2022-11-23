@@ -17,12 +17,15 @@ const Questions = (questtion) => {
       <div className = "display-tags-time">
       <div className = "display-tags">
         {
-          question.tag.map((tag) =>(
+          question.questionTags.map((tag) =>(
             <p key = {tag}> {tag} </p>
           )
           
           )
         }
+        <p className = "display-time">
+          asked {question.askedOn} {question.userPosted}
+        </p>
           <p className = "display-title"
       </div>
 
